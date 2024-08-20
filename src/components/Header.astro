@@ -5,6 +5,14 @@ import Nav from './Nav.astro'
 const { current = '' } = Astro.props;
 ---
 
+
+<header>
+  <!-- <Logo/> -->
+  <h2>Reuter Development</h2>
+  <Nav current={current} />
+</header>
+
+
 <style>
   header {
     display: flex;
@@ -13,9 +21,5 @@ const { current = '' } = Astro.props;
     padding: 2em;
     width: 100%;
   }
-</style>
 
-<header>
-  <Logo/>
-  <Nav current={current} />
-</header>
+</style>

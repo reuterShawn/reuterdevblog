@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = 'Shawn Reuter Blgo';
+const title = 'Shawn Reuter Blog';
 const description = 'The perfect starter for your perfect blog.';
 const permalink = Astro.site.href;
 ---
@@ -10,24 +10,26 @@ const permalink = Astro.site.href;
   <div class="home-container">
     <div class="home-copy">
       <h1>Welcome to my Blog</h1>
-      <p>I am web developer ffreelancing with my brand Reuter Development</p>
-    </div>
-
-
-    <!-- <div class="hero-image-container">
-      <picture>
-        <source srcset="/assets/home-illustration.webp" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of person reading a book" src="/assets/home-illustration-small.webp" width="550" height="466">
-      </picture>
-      <p class="caption">
-        Illustration by
-        <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
-        from
-        <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
+      <p>
+        Hi, I'm <strong>Shawn</strong>. I'm a freelance web developer creating dynamic websites for those in need. 
+        You can follow or connect with me on <a href="https://www.linkedin.com/in/shawn-reuter/" target="_blank">LinkedIn</a>,    
+        see some of my work on <a href="https://github.com/reuterShawn" target="_blank">GitHub</a>,  
       </p>
+  
     </div>
-  </div> -->
+
+    <div class="hero-image-container">
+      <picture>
+        <source srcset="/assets/headshotShawn.jpg" media="(min-width: 500px" ''>
+        <img class="hero-image" alt="A person in a blue suit smiling" src="/assets/home-illustration-small.webp" width="500" height="466">
+      </picture>
+    </div>
+
+
 </BaseLayout>
+
+
+<h2>Check out my Blog</h2>
 
 <style>
   .home-container {
@@ -62,6 +64,7 @@ const permalink = Astro.site.href;
   .hero-image-container picture {
     display: block;
     min-height: 250px;
+    border-radius: 12px;
   }
 
   .caption {
