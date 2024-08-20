@@ -1,6 +1,6 @@
 ---
 title: Thought Process Behind My Logo 👋
-publishDate:  August 2024
+publishDate: 20 August 2024
 description: Go into Detail the specific decisions made when I was designing my logo and brand.
 ---
 
@@ -45,7 +45,3 @@ Be clear to define what is the sun that you are working towards when you propose
 ## Field Of Fruition
 
 The fields of fruition on the sides is the work you are doing and to show or display that you are always growing in your skills as an individual and in my brand I want that to stand out. 
-
-
-
-## Applying This Structure 
