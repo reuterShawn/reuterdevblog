@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+import CTA from "../components/CTA.astro"
 const title = 'About';
 const description = 'About your blog.';
 const permalink = `${Astro.site.href}about`;
@@ -15,6 +15,7 @@ const permalink = `${Astro.site.href}about`;
 
     <h2>My Projects</h2>
 
+    <CTA/>
 </BaseLayout>
 
 <style>
