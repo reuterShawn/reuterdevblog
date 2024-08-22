@@ -8,7 +8,7 @@ const { current = '' } = Astro.props;
 
 <header>
   <!-- <Logo/> -->
-  <h2>Reuter Development</h2>
+  <h2 class="title">Reuter Development</h2>
   <Nav current={current} />
 </header>
 
@@ -22,4 +22,9 @@ const { current = '' } = Astro.props;
     width: 100%;
   }
 
+  @media screen and (max-width: 600px) {
+    .title {
+      visibility: hidden;
+    }
+  }
 </style>
