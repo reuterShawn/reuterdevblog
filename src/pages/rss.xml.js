@@ -1,27 +1,18 @@
-// import rss {pagesGlobToRssItems}
-// from '@astrojs/rss';
-// import {getCollection} from 'astro:content';
+import rss from '@astrojs/rss';
 
-// export async function GET(context) {
-//     const blog = await getCollection('blog');
+export async function get(context) {
+  const postImportResult = import.meta.glob('./blog/**/*.md', { eager: true });
+  const posts = Object.values(postImportResult);
 
-//     return rss({
-//         title: 'Shawn’s Blog',
-//         // `<description>` field in output xml
-//         description: 'A Freelance web developer sharing his insights and freelancing journey',
-//         // Pull in your project "site" from the endpoint context
-//         // https://docs.astro.build/en/reference/api-reference/#contextsite
-//         site: reuterdev.blog,
-//           items: await pagesGlobToRssItems(
-//             import.meta.glob('./blog/'.{md, mdx}'),
-// ),
-//         //     title: post.data.title,
-//         //     pubDate: post.data.pubDate,
-//         //     description: post.data.description,
-//         //     customData: post.data.customData,
-//         //     // Compute RSS link from post `slug`
-//         //     // This example assumes all posts are rendered as `/blog/[slug]` routes
-//         //     link: `/blog/${post.slug}/`,
-//         )
-//     });
-// }
+  return rss({
+    title: 'Shawn ',
+    description: 'Your blog description',
+    site: context.site,
+    items: posts.map((post) => ({
+      title: post.frontmatter.title,
+      pubDate: post.frontmatter.pubDate,
+      description: post.frontmatter.description,
+      link: `/blog/${popst.frontmatter.slug}/`,
+    })),
+  });
+}
