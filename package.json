@@ -18,5 +18,8 @@
     "rehype-external-links": "^3.0.0",
     "remark-gfm": "^4.0.0",
     "remark-smartypants": "^2.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
   }
 }

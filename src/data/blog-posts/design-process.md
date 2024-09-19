@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Creating an Audit to Propose to a Client
 publishDate: 19 August 2024
 description: Going into detail of creating a audit to use to propose to a client. In this example I am creating a Wordpress wwebsite with an ecommerce solution.
@@ -78,4 +78,4 @@ Using Wordpress I create a website
 # <a name="Summary"></a>
 ## In Summary
 
-It is important to have a thorough way that you go about getting leads
+It is important to have a thorough way that you go about getting leads -->
